@@ -18,7 +18,8 @@ To set up the project locally, follow these steps:
 
 **1. Clone the repository:**
 
-git clone https://github.com/Keerthanapri/Health-tip-of-the-day.git
+git clone https://github.com/Keerthanapri/Health-tip-of-the-Day.git
+
 cd health-tip-of-the-day
 
 **2. Open 'index.html':**
