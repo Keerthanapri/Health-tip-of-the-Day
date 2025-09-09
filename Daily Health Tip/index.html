@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tip of the Day</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#40916c">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💚Health Tip of the Day💚</h1>
+            <p>Stay Healthy, Stay Happy!</p>
+            <p id="daily-date"></p>
+        </header>
+
+        <div class="category-buttons">
+            <button class="category-btn active" data-category="All">All</button>
+            <button class="category-btn" data-category="Physical">Physical</button>
+            <button class="category-btn" data-category="Mental">Mental</button>
+            <button class="category-btn" data-category="Nutrition">Nutrition</button>
+        </div>
+
+        <div class="tip-card" id="tip-card">
+            <div class="tip-icon-circle">
+                <span class="tip-icon" id="tip-icon">💡</span>
+            </div>
+            <p id="tip-text">Loading tip...</p>
+        </div>
+
+        <div class="actions">
+            <button id="random-btn">🎲 Random Tip</button>
+            <div class="toggle-switch">
+                <input type="checkbox" id="dark-mode-btn">
+                <label for="dark-mode-btn"></label>
+            </div>
+        </div>
+
+        <div class="history">
+            <h3>Tip History:</h3>
+            <ul id="tip-history"></ul>
+        </div>
+
+        <footer>
+            <p>Powered by your daily health boost💚</p>
+        </footer>
+    </div>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Sound effects -->
+    <audio id="pop-sound" src="pop.wav"></audio>
+    <audio id="confetti-sound" src="confetti.mp3"></audio>
+
+    <script src="tips.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
